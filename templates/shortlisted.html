@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEC 2026 – Join WhatsApp Group</title>
+  <style>
+    /* ── Reset ─────────────────────────────── */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #2c2c2c;
+      line-height: 1.7;
+      padding: 40px 16px;
+    }
+
+    /* ── Container ─────────────────────────── */
+    .email-wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ────────────────────────────── */
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .header p {
+      color: #a8b2d1;
+      font-size: 13px;
+      margin-top: 6px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* ── Body ──────────────────────────────── */
+    .content {
+      padding: 36px 32px;
+    }
+
+    .greeting {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .congrats {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0f3460;
+      margin-bottom: 20px;
+    }
+
+    .body-text {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    /* ── Info Box ──────────────────────────── */
+    .info-box {
+      background: #eef2ff;
+      border-left: 4px solid #0f3460;
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+
+    .info-box h3 {
+      font-size: 16px;
+      color: #0f3460;
+      margin-bottom: 8px;
+    }
+
+    .info-box p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ── Notes List ────────────────────────── */
+    .notes {
+      margin: 24px 0;
+    }
+
+    .notes h3 {
+      font-size: 16px;
+      color: #0f3460;
+      margin-bottom: 12px;
+    }
+
+    .notes ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .notes ul li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .notes ul li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: #0f3460;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    /* ── Closing ───────────────────────────── */
+    .closing {
+      margin-top: 28px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    /* ── Signature ─────────────────────────── */
+    .signature {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid #e8e8e8;
+    }
+
+    .signature .name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .signature .title {
+      font-size: 13px;
+      color: #666;
+      margin-top: 2px;
+      line-height: 1.5;
+    }
+
+    /* ── Footer ────────────────────────────── */
+    .footer {
+      background: #f8f9fb;
+      text-align: center;
+      padding: 20px 32px;
+      border-top: 1px solid #ececec;
+    }
+
+    .footer p {
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="email-wrapper">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>National Entrepreneurship Challenge 2026</h1>
+      <p>{{club}}</p>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <p class="greeting">Dear {{name}},</p>
+
+      <p class="congrats">Congratulations! 🎉</p>
+
+      <p class="body-text">
+        We are delighted to inform you that you have been <strong>selected</strong> as a part of the <strong>National Entrepreneurship Challenge (NEC) 2026 Team</strong>, organized by <strong>{{club}}</strong> in collaboration with <strong>E-Cell, IIT Bombay</strong>.
+      </p>
+
+      <p class="body-text">
+        We are pleased to appoint you to the following position:
+      </p>
+
+      <!-- Appointment Box -->
+      <div class="info-box" style="border-left-color: #4f46e5; background-color: #f5f3ff; margin: 18px 0; padding: 16px 20px;">
+        <p style="margin: 0; font-size: 15px; color: #1e1b4b; line-height: 1.6;">
+          <strong>Domain:</strong> {{domain}}
+        </p>
+        <p style="margin: 6px 0 0 0; font-size: 15px; color: #1e1b4b; line-height: 1.6;">
+          <strong>Designation:</strong> {{designation}}
+        </p>
+      </div>
+
+      <p class="body-text">
+        Your dedication, enthusiasm, and performance throughout the recruitment process have earned you this opportunity. We are excited to have you on board and look forward to your valuable contributions to the success of NEC 2026.
+      </p>
+
+      <!-- Mandatory Meeting -->
+      <div class="notes" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 20px 24px; margin: 24px 0;">
+        <h3 style="color: #0f3460; font-size: 16px; margin-bottom: 12px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+          📅 Mandatory Meeting
+        </h3>
+        <p class="body-text" style="font-weight: 600; color: #1e293b; margin-bottom: 12px;">
+          You are required to attend a mandatory team meeting tomorrow during the lunch hour.
+        </p>
+        <p class="body-text" style="font-size: 14px; font-weight: bold; color: #475569; margin-bottom: 8px;">Please Note:</p>
+        <ul>
+          <li>Attendance is <strong>compulsory</strong> for all selected members.</li>
+          <li>The meeting agenda will include team introductions, onboarding, role briefing, and upcoming responsibilities.</li>
+          <li>Kindly carry your <strong>College ID Card</strong>.</li>
+          <li>Any updates regarding the exact venue or timing will be communicated through the official WhatsApp group.</li>
+        </ul>
+      </div>
+
+      <p class="body-text">
+        We congratulate you once again on your selection and welcome you to the NEC 2026 team. We look forward to working with you and wish you a successful and rewarding journey ahead.
+      </p>
+
+      <!-- Signature -->
+      <div class="signature">
+        <p class="name">R. Varun</p>
+        <p class="title">
+          Director – National Entrepreneurship Challenge (NEC) 2026, MGIT<br />
+          E-Cell IIT Bombay Campus Ambassador<br />
+          Head Developer, {{club}} | R&amp;D
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Sent on {{date}} · {{club}} · NEC 2026</p>
+    </div>
+
+  </div>
+</body>
+
+</html>
